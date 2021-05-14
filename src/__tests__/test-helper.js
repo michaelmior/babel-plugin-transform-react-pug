@@ -8,7 +8,7 @@ import transformReactPug from '../';
 
 const formatCode = input =>
   prettier.format(input, {
-    parser: 'babylon',
+    parser: 'babel',
   });
 
 export function mockConsoleErrors() {

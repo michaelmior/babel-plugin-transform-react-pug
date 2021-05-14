@@ -10,7 +10,7 @@ const DEFAULT_OPTIONS = {
   classAttribute: 'className',
 };
 
-export default function(babel) {
+export default function (babel) {
   const {types: t} = babel;
 
   setBabelTypes(t);

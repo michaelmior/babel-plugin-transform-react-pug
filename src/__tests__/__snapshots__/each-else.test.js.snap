@@ -7,12 +7,12 @@ exports[`JavaScript output: transformed source code 1`] = `
       return (
         <div key={i}>
           {Array.isArray(list) && list.length
-            ? list.map(item => {
+            ? list.map((item) => {
                 return <span key={item}>{item}</span>;
               })
             : \\"No items in this list\\"}
           {Array.isArray(list) && list.length ? (
-            list.map(item => {
+            list.map((item) => {
               return <span key={item}>{item}</span>;
             })
           ) : (

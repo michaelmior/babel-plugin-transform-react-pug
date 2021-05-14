@@ -3,7 +3,7 @@
 exports[`JavaScript output: transformed source code 1`] = `
 "const object = {
   first: \\"one-in-object\\",
-  second: \\"two-in-object\\"
+  second: \\"two-in-object\\",
 };
 const array = [\\"arr-one\\", \\"arr-two\\"];
 module.exports = (
@@ -17,7 +17,7 @@ module.exports = (
     <div className={[\\"one\\", \\"two\\"].join(\\" \\")} />
     <div
       className={{
-        first: true
+        first: true,
       }}
     />
     <div {...object} after=\\"after\\" />
@@ -33,7 +33,7 @@ module.exports = (
       className={
         \\"mix \\" +
         {
-          first: true
+          first: true,
         }
       }
     />

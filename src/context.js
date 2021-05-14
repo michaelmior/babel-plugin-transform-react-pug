@@ -95,9 +95,10 @@ class Context {
     return result;
   }
 
-  dynamicBlock<T>(
-    fn: (context: Context) => T,
-  ): {result: T, variables: Array<Identifier>} {
+  dynamicBlock<T>(fn: (context: Context) => T): {
+    result: T,
+    variables: Array<Identifier>,
+  } {
     const childContext = new Context({
       definesScope: true,
       key: new DynamicBlock(this.key, 'src', 0),

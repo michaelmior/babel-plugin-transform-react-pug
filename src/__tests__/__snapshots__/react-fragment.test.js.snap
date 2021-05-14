@@ -22,7 +22,7 @@ exports[`basic static html output: static html 1`] = `"<div></div><div></div>"`;
 exports[`with each JavaScript output: transformed source code 1`] = `
 "module.exports = (
   <React.Fragment>
-    {[1, 2, 3].map(item => {
+    {[1, 2, 3].map((item) => {
       return <div key={item}>{item}</div>;
     })}
     <div>Next item</div>

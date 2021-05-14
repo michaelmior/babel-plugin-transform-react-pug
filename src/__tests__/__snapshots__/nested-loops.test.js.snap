@@ -3,19 +3,19 @@
 exports[`JavaScript output: transformed source code 1`] = `
 "module.exports = (
   <div>
-    {[1, 2, 3].map(a => {
+    {[1, 2, 3].map((a) => {
       let _name;
 
       return [
         ((_name = \\"a\\"), null),
         <div key={a}>
           {_name + \\":\\" + a}
-          {[1, 2, 3].map(b => {
+          {[1, 2, 3].map((b) => {
             let _name2;
 
             return [
               ((_name2 = \\"b\\"), null),
-              <div key={b}>{_name2 + \\":\\" + b}</div>
+              <div key={b}>{_name2 + \\":\\" + b}</div>,
             ];
           })}
           {[1, 2, 3].map((c, i) => {
@@ -23,32 +23,35 @@ exports[`JavaScript output: transformed source code 1`] = `
 
             return [((_name3 = \\"c\\"), null), <div key={c}>{_name3 + c}</div>];
           })}
-        </div>
+        </div>,
       ];
     })}
-    {[[1, 2, 3], [\\"a\\", \\"b\\", \\"c\\"]].map((list, index) => {
-      return list.map(item => {
+    {[
+      [1, 2, 3],
+      [\\"a\\", \\"b\\", \\"c\\"],
+    ].map((list, index) => {
+      return list.map((item) => {
         return <div key={item + index} data-value={item} />;
       });
     })}
-    {[[1, 2, 3], \\"text\\"].map(list => {
+    {[[1, 2, 3], \\"text\\"].map((list) => {
       return Array.isArray(list)
-        ? list.map(item => {
+        ? list.map((item) => {
             return <p key={item}>{item}</p>;
           })
         : null;
     })}
-    {[1, 2].map(i => {
+    {[1, 2].map((i) => {
       let _anotherArray;
 
       return [
         ((_anotherArray = [\\"a\\", \\"b\\", \\"c\\"]), null),
         _anotherArray.map((item, index) => {
           return <p key={index}>{item}</p>;
-        })
+        }),
       ];
     })}
-    {[1, 2].map(i => {
+    {[1, 2].map((i) => {
       return [<div key={i}>{i}</div>, <div key={i + 10}>{i}</div>];
     })}
   </div>

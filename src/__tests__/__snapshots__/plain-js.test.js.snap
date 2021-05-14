@@ -11,7 +11,7 @@ exports[`case html output: generated html 1`] = `null`;
 exports[`case static html output: static html 1`] = `""`;
 
 exports[`code JavaScript output: transformed source code 1`] = `
-"const log = text => text;
+"const log = (text) => text;
 
 module.exports = (log(\\"Hello\\"), null);
 "
@@ -24,7 +24,7 @@ exports[`code static html output: static html 1`] = `""`;
 exports[`code-multiline JavaScript output: transformed source code 1`] = `
 "let _greeting;
 
-const log = text => text;
+const log = (text) => text;
 
 module.exports = (
   <React.Fragment>
@@ -40,7 +40,7 @@ exports[`code-multiline html output: generated html 1`] = `null`;
 exports[`code-multiline static html output: static html 1`] = `""`;
 
 exports[`each JavaScript output: transformed source code 1`] = `
-"module.exports = [1, 2, 3].map(item => {
+"module.exports = [1, 2, 3].map((item) => {
   return <div key={item}>{item}</div>;
 });
 "
@@ -65,10 +65,10 @@ exports[`each static html output: static html 1`] = `"<div>1</div><div>2</div><d
 exports[`each-multiple JavaScript output: transformed source code 1`] = `
 "module.exports = (
   <React.Fragment>
-    {[1, 2, 3].map(item => {
+    {[1, 2, 3].map((item) => {
       return <div key={item}>{item}</div>;
     })}
-    {[1, 2, 3].map(item => {
+    {[1, 2, 3].map((item) => {
       return <div key={item}>{item}</div>;
     })}
   </React.Fragment>
@@ -113,7 +113,7 @@ exports[`if static html output: static html 1`] = `""`;
 exports[`while JavaScript output: transformed source code 1`] = `
 "let n = 0;
 
-module.exports = (_pug_nodes => {
+module.exports = ((_pug_nodes) => {
   while (n < 3) {
     _pug_nodes[_pug_nodes.length] = <div key={n}>{n++}</div>;
   }

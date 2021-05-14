@@ -12,7 +12,7 @@ module.exports = (
     <p styleName=\\"fourth-a fourth-b\\" />
     <p className=\\"fivth-a fivth-b\\" />
     <p styleName=\\"two\\" className=\\"one\\" />
-    {[1, 2, 3].map(item => {
+    {[1, 2, 3].map((item) => {
       return (
         <p
           key={item}
@@ -37,7 +37,7 @@ module.exports = (
     <p styleName=\\"fourth-a fourth-b\\" />
     <p className=\\"fivth-a fivth-b\\" />
     <p styleName=\\"one two\\" />
-    {[1, 2, 3].map(item => {
+    {[1, 2, 3].map((item) => {
       return (
         <p
           key={item}

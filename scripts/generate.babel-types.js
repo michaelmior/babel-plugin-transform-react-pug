@@ -48,7 +48,7 @@ function getTypeFromValidator(validator) {
       validator.chainOf[1].oneOf
     ) {
       return validator.chainOf[1].oneOf
-        .map(function(val) {
+        .map(function (val) {
           return JSON.stringify(val);
         })
         .join(' | ');
@@ -121,7 +121,7 @@ Object.keys(types.BUILDER_KEYS)
     babelNodes.push(`  type: '${key}';`);
     babelNodes.push(`  loc: ?Location;`);
     Object.keys(types.NODE_FIELDS[key])
-      .sort(function(fieldA, fieldB) {
+      .sort(function (fieldA, fieldB) {
         const indexA = types.BUILDER_KEYS[key].indexOf(fieldA);
         const indexB = types.BUILDER_KEYS[key].indexOf(fieldB);
         if (indexA === indexB) return fieldA < fieldB ? -1 : 1;
@@ -129,7 +129,7 @@ Object.keys(types.BUILDER_KEYS)
         if (indexB === -1) return -1;
         return indexA - indexB;
       })
-      .forEach(function(field) {
+      .forEach(function (field) {
         const t = getType(key, field);
         const optional = types.NODE_FIELDS[key][field].optional ? '?' : '';
         if (field === 'static') {

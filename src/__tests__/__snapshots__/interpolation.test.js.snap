@@ -9,7 +9,7 @@ exports[`JavaScript output: transformed source code 1`] = `
   );
 }
 
-module.exports = new function() {
+module.exports = new (function () {
   this.message = \\"Hello everyone\\";
   this.names = [\\"jack\\", \\"john\\"];
   const showFirstPerson = true;
@@ -26,7 +26,7 @@ module.exports = new function() {
       ))}
     </div>
   );
-}();
+})();
 "
 `;
 

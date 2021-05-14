@@ -23,10 +23,10 @@ function removeBasedir(value) {
 }
 // filename serializer that removes the basedir
 module.exports = {
-  test: function(val) {
+  test: function (val) {
     return matchesBasedir(val);
   },
-  print: function(val, serialize, indent) {
+  print: function (val, serialize, indent) {
     return serialize(removeBasedir(val));
   },
 };
