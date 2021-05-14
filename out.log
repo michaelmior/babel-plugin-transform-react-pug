@@ -1,0 +1,50 @@
+[2021-05-14 12:16:39.585] No saved state available
+[2021-05-14 12:16:39.587] Parsing
+[2021-05-14 12:16:41.537] Loading libraries
+[2021-05-14 12:16:42.581] Resolving dependencies
+[2021-05-14 12:16:42.771] Resolved requires changed
+[2021-05-14 12:16:42.777] Indexing files
+[2021-05-14 12:16:42.787] Done
+[2021-05-14 12:16:42.797] Calculating dependencies
+[2021-05-14 12:16:42.797] Merging 20 files
+[2021-05-14 12:16:43.035] Merge skipped 0 of 20 modules
+[2021-05-14 12:16:43.035] Merging done.
+[2021-05-14 12:16:43.035] Checking 20 files
+[2021-05-14 12:16:43.095] [flow serverWorker 6] /Users/mmior/apps/babel-plugin-transform-react-pug/src/utils/interpolation.js file stats: (annotations_added: 1, total_size_of_annotations: 1, sig_ver_errors: 1, annotations_required: 1, annotations_skipped: 0)
+[2021-05-14 12:16:43.111] [flow serverWorker 2] /Users/mmior/apps/babel-plugin-transform-react-pug/src/visitors/Text.js file stats: (annotations_added: 2, total_size_of_annotations: 6, sig_ver_errors: 2, annotations_required: 2, annotations_skipped: 0)
+[2021-05-14 12:16:43.116] [flow serverWorker 4] /Users/mmior/apps/babel-plugin-transform-react-pug/src/visitors/Code.js file stats: (annotations_added: 1, total_size_of_annotations: 4, sig_ver_errors: 1, annotations_required: 1, annotations_skipped: 0)
+[2021-05-14 12:16:43.151] [flow serverWorker 8] /Users/mmior/apps/babel-plugin-transform-react-pug/src/block-key.js file stats: (annotations_added: 6, total_size_of_annotations: 12, sig_ver_errors: 6, annotations_required: 6, annotations_skipped: 0)
+[2021-05-14 12:16:43.161] [flow serverWorker 8] /Users/mmior/apps/babel-plugin-transform-react-pug/src/context.js file stats: (annotations_added: 1, total_size_of_annotations: 1, sig_ver_errors: 1, annotations_required: 1, annotations_skipped: 0)
+[2021-05-14 12:16:46.306] Done
+[2021-05-14 12:16:46.308] recheck 5 modified, 0 deleted files
+[2021-05-14 12:16:46.308] modified files:
+[2021-05-14 12:16:46.308] 1/5: /Users/mmior/apps/babel-plugin-transform-react-pug/src/block-key.js
+[2021-05-14 12:16:46.308] 2/5: /Users/mmior/apps/babel-plugin-transform-react-pug/src/context.js
+[2021-05-14 12:16:46.308] 3/5: /Users/mmior/apps/babel-plugin-transform-react-pug/src/utils/interpolation.js
+[2021-05-14 12:16:46.308] 4/5: /Users/mmior/apps/babel-plugin-transform-react-pug/src/visitors/Code.js
+[2021-05-14 12:16:46.308] 5/5: /Users/mmior/apps/babel-plugin-transform-react-pug/src/visitors/Text.js
+[2021-05-14 12:16:46.308] Parsing
+[2021-05-14 12:16:46.353] Resolved requires are unchanged
+[2021-05-14 12:16:46.360] Re-resolving directly dependent files
+[2021-05-14 12:16:46.373] Resolved requires are unchanged
+[2021-05-14 12:16:46.374] Recalculating dependency graph
+[2021-05-14 12:16:46.379] Updating index
+[2021-05-14 12:16:46.386] Done updating index
+[2021-05-14 12:16:46.400] recheck 10 dependent files:
+[2021-05-14 12:16:46.400] to_merge: Focused: 5, Dependents: 9, Dependencies: 6
+[2021-05-14 12:16:46.400] Calculating dependencies
+[2021-05-14 12:16:46.402] Merging
+[2021-05-14 12:16:46.705] Merge skipped 0 of 20 modules
+[2021-05-14 12:16:46.706] Done
+[2021-05-14 12:16:46.706] Check prep
+[2021-05-14 12:16:46.706] new or changed signatures: 14
+[2021-05-14 12:16:46.706] Check will skip 0 of 14 files
+[2021-05-14 12:16:46.706] Checking files
+[2021-05-14 12:16:46.813] Done
+[2021-05-14 12:16:46.813] Checked set: Focused: 5, Dependents: 9, Dependencies: 6
+[2021-05-14 12:16:46.813] Calculating dependencies
+[2021-05-14 12:16:46.813] Merging 9 files
+[2021-05-14 12:16:46.930] Merge skipped 0 of 9 modules
+[2021-05-14 12:16:46.930] Merging done.
+[2021-05-14 12:16:46.930] Checking 5 files
+[2021-05-14 12:16:46.981] Done

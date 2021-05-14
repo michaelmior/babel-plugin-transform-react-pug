@@ -193,7 +193,7 @@ class Context {
     path: Object,
     interpolations?: Map<string, Expression>,
     params: {options: Options},
-  ) {
+  ): Context {
     return new Context({
       definesScope: true,
       key: new BaseKey(),

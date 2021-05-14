@@ -77,7 +77,10 @@ function visitUnbufferedCode(node: Object, context: Context) {
 }
 
 const CodeVisitor = {
-  expression(node: Object, context: Context) {
+  expression(
+    node: Object,
+    context: Context,
+  ): CallExpression | SequenceExpression | Expression {
     if (node.buffer && !node.mustEscape) {
       throw new Error('Unescaped, buffered code is not supported in react-pug');
     }

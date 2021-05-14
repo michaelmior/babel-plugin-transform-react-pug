@@ -49,7 +49,10 @@ function buildInterpolation(
 }
 
 const TextVisitor = {
-  jsx({val}: {val: string}, context: Context) {
+  jsx(
+    {val}: {val: string},
+    context: Context,
+  ): JSXExpressionContainer | JSXText {
     const refs = getInterpolationRefs(val);
 
     if (refs) {
@@ -65,7 +68,10 @@ const TextVisitor = {
 
     return t.jSXText(content);
   },
-  expression({val}: {val: string}, context: Context) {
+  expression(
+    {val}: {val: string},
+    context: Context,
+  ): StringLiteral | Expression {
     const refs = getInterpolationRefs(val);
 
     if (refs) {

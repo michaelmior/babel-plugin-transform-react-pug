@@ -11,7 +11,7 @@ const INTERPOLATION_REFERENCE_ID = '_react_pug_replace_';
  * Used to check whether a value contains a replace
  * reference or multiple replace references.
  */
-const INTERPOLATION_REFERENCE_REGEX = /_react_pug_replace_\d+/g;
+const INTERPOLATION_REFERENCE_REGEX: RegExp = /_react_pug_replace_\d+/g;
 
 /**
  * Check whether the value is a valid interpolation
@@ -33,23 +33,26 @@ function getInterpolationRefs(value: string): ?Array<string> {
  * @returns { Object } - The template with interpolation references
  * and a map containing the reference and the interpolation.
  */
-function getInterpolatedTemplate(tpl: Array<TemplateElement>, interpolations: Array<Expression>): { template: string, interpolationRef: Map<string, Expression> } {
+function getInterpolatedTemplate(
+  tpl: Array<TemplateElement>,
+  interpolations: Array<Expression>,
+): {template: string, interpolationRef: Map<string, Expression>} {
   const interpolationRef: Map<string, Expression> = new Map();
 
-  const template = tpl.map(({value}, index) => {
+  const template = tpl
+    .map(({value}, index) => {
+      const interpolation = interpolations[index];
+      const rawValue = value && typeof value === 'object' ? value.raw : '';
 
-    const interpolation = interpolations[index];
-    const rawValue = value && typeof value === 'object' ? value.raw : '';
+      if (interpolation) {
+        const ref = `${INTERPOLATION_REFERENCE_ID}${index}`;
+        interpolationRef.set(ref, interpolation);
+        return `${String(rawValue)}${ref}`;
+      }
 
-    if (interpolation) {
-      const ref = `${INTERPOLATION_REFERENCE_ID}${index}`;
-      interpolationRef.set(ref, interpolation);
-      return `${String(rawValue)}${ref}`;
-    }
-
-    return rawValue;
-
-  }).join('');
+      return rawValue;
+    })
+    .join('');
 
   return {template, interpolationRef};
 }

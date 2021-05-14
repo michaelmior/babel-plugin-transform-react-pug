@@ -82,12 +82,12 @@ export class StaticBlock implements Key {
  * elements from that one intial key.
  */
 export class DynamicBlock implements Key {
-  _ended = false;
-  _localKey = null;
-  _parentEnded = false;
-  _parentKey = null;
-  _pending = [];
-  _index = 0;
+  _ended: boolean = false;
+  _localKey: null = null;
+  _parentEnded: boolean = false;
+  _parentKey: null | Expression = null;
+  _pending: Array<(key: Expression) => mixed> = [];
+  _index: number = 0;
   _srcForError: string;
   _lineNumberForError: number;
 
